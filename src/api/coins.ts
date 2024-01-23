@@ -2,14 +2,14 @@ import axios from "axios";
 import { CoinType } from "../@types/coins";
 
 const API_BASE_URL = 'https://api.livecoinwatch.com/';
-const API_KEY = '';
+const API_KEY = import.meta.env.VITE_API_KEY;
 
 const api = axios.create({
   baseURL: API_BASE_URL,
   headers: {
     'x-api-key': API_KEY
   }
-})
+});
 
 export const fetchCoins = async (page: number = 1) => {
 

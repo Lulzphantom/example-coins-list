@@ -1,18 +1,16 @@
+import Footer from '@/components/Footer';
 import { QueryClient } from '@tanstack/react-query';
-import { Link, Outlet, rootRouteWithContext } from '@tanstack/react-router';
-import { TanStackRouterDevtools } from '@tanstack/router-devtools';
+import { Outlet, rootRouteWithContext } from '@tanstack/react-router';
 
 const RootComponent = () => (
   <>
-    <div className='w-full md:w-1/3 px-8 md:p-0 text-white mx-auto'>
-      <nav className="my-5 p-5 flex gap-2 justify-center bg-neutral-700 rounded-md text-white self-center">
-        <Link to="/" className="[&.active]:font-bold">
-          Home
-        </Link>
-      </nav>
+    <div className='w-full md:w-1/3 px-8 md:p-0 text-white mx-auto flex-grow'>
+      <header className="my-5 p-5 flex gap-2 justify-center bg-neutral-700 rounded-md text-neutral-50 font-bold self-center">
+        Coins List
+      </header>
       <Outlet />
     </div>
-    <TanStackRouterDevtools />
+    <Footer />
   </>
 );
 

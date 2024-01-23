@@ -57,14 +57,14 @@ function Home() {
         <Button
           disabled={page.cPage === 1}
           onClick={handlePrevPage}>
-          {'< página anterior'}
+          {'< Anterior'}
         </Button>
         <span>
           <strong>Página: </strong>{page.cPage}
         </span>
         <Button
           onClick={handleNextPage}>
-          {'Siguiente página >'}
+          {'Siguiente >'}
         </Button>
       </section>
     </main>

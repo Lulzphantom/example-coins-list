@@ -2,6 +2,7 @@ export type CoinType = {
   code: string;
   name: string;
   symbol: string;
+  rank: number;
   color: string;
   png64: string;
   volume: number;
