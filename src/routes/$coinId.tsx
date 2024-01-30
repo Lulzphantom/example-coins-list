@@ -25,7 +25,7 @@ function CoinDetailComponent() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ ease: 'easeInOut' }}
         className='text-black p-8 bg-neutral-50 rounded-md border-neutral-300 border-[1px]'>
-        <section className="flex justify-between">
+        <section className="flex justify-between flex-wrap">
           <div className='flex gap-4 items-center'>
             <img src={coin.png64} className="h-8" />
             <div className="flex flex-col text-left">
@@ -39,7 +39,7 @@ function CoinDetailComponent() {
               </span>
             </div>
           </div>
-          <div className='flex flex-col text-right'>
+          <div className='flex flex-col text-left xs:text-right mt-4 xs:mt-0'>
             <span className='text-sm'>
               <strong>Rango: </strong>{coin.rank}
             </span>

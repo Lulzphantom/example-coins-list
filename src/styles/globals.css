@@ -5,7 +5,7 @@
 #root {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100svh;
 }
 
 body {
@@ -16,7 +16,7 @@ body::before {
   --line: hsla(0, 0%, 40%, 0.15);
   content: "";
   width: 100vw;
-  height: 100vh;
+  min-height: 100svh;
   position: fixed;
   top: 0;
   z-index: -1;
